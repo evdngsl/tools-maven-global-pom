@@ -76,7 +76,7 @@
 
         <!-- All database connectors must be kept in sync -->
         <!-- with src/main/resources/build-config/ant/build.properties file present in tools-maven-build-config plugin-->
-        <mysql.version>8.0.26</mysql.version>
+        <mysql.version>3.5.7</mysql.version>
         <postgresql.version>42.7.2</postgresql.version>
         <hsqldb.version>2.7.4</hsqldb.version>
 
@@ -851,8 +851,8 @@
             </activation>
             <dependencies>
                 <dependency>
-                    <groupId>mysql</groupId>
-                    <artifactId>mysql-connector-java</artifactId>
+                    <groupId>org.mariadb.jdbc</groupId>
+                    <artifactId>mariadb-java-client</artifactId>
                     <!-- Must be kept in sync with lutece-core src/sql/build.properties -->
                     <version>${mysql.version}</version>
                     <optional>true</optional>
